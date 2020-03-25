@@ -9,7 +9,8 @@
   <body>
   <noscript>We've moved! <a href="https://flickr.com/photos/al_spencer">Click Here</a></noscript>
   <script type="text/javascript">
-    location.replace("https://flickr.com/photos/al_spencer"+location.href.match(/https?\:\/\/[^/]+(\/.*)$/,"")[1])
+    let ending=location.href.match(/https?\:\/\/[^/]+\/?(.*)$/,"")[1];
+    location.replace(`https://flickr.com/${ending?"photos":"people"}/al_spencer/${ending?ending:""}`)
   </script>
   </body>
 </html>
