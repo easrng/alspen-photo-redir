@@ -1,1 +1,0 @@
-# alspen-photo-redir
